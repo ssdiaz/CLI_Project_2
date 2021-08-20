@@ -11,3 +11,6 @@ hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
 hint: 'development'. The just-created branch can be renamed via this command:
 hint: 
 hint:   git branch -m <name>
+
+
+my next step: add files and start project :) want to add the scrapper file check here and then go from there. 
