@@ -30,10 +30,16 @@ prod_desc = doc.css("p.prod-desc a") #need to iterate below:
 reviews = doc.css("span.prodCellReview a").text.strip
 #puts reviews
 
-price= doc.css("span.regPrice") #need to iterate below: 
+price = doc.css("span.regPrice") #need to iterate below: 
     # price.each do |i|
     #     puts i.text.strip!
     # end
+
+url = doc_categories.css("li.cat-sub-nav a href")
+    url.each do |i|
+        puts i.attr("href")
+    end
+
 
 # price_new = doc.css("span.pro-new-price") #need to iterate below: 
 #     price_new.each do |i|

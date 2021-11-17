@@ -1,16 +1,27 @@
-Hair Product contain good or bad alcohol for curly hair
+Check if a hair product contains good or bad alcohol for curly hair, using products found at Ulta Beauty Online.
 
 #!/usr/bin/env ruby
 
-Alcohol & Your Curls
+<!-- Alcohol & Your Curls
 AlcoholAndYourCurls
+Alcohol_And_Your_Curls
+curls_and_alcohol_products
+Curls_and_Alcohol_Products
+
+hair_product_check 
+
+alcohol_and_curls
+alcohol_and_curly_products -->
+
+curly_product_check
+
 
 1. Flow
 2. Classes
     2a. Class relationships
 
 1. Flow:
-Welcome to the Alcohol & Your Curls App for Ulta Beauty Online! Use this CLI App to select a product and find out if it containts a helpful or harmful alcohol for your curls. You can also add products to your CLI Wish List to view for purchasing later. 
+Welcome to the Curly Product Check/Alcohol & Your Curls App for Ulta Beauty Online! Use this CLI App to select a product and find out if the ingredients contains a helpful or harmful alcohol for your curls. *You can also add products to your CLI Wish List to view for purchasing later.*
 
 Let's Get Started!
 
@@ -25,7 +36,7 @@ Type the number to select the Product:
 - User chooses Product
 [Product_Method]
 - displays if product has good or bad alcohol
-- asks if user wants to Add Product to Wish list
+- asks if user wants to Add Product to Wish list *maybe*
     - user selects: y/n
         - y: Product Added! 
              Display [menu]
@@ -33,7 +44,7 @@ Type the number to select the Product:
 
 - [menu]
     Type the number to select:
-        1. View Wish list
+        1. View Wish list *also maybe*
     *maybe* <!-- 2. View Recently Viewed Products -->
         3. Return to Products
         4. Return to Brands
@@ -74,7 +85,7 @@ Type the number to select the Product:
         - belongs to: HairCategory
     - Product
         - belongs to: Brand
-        - methods: view_product (needs to call add to wish list I think; add_WL_item)
+        - methods: *view_product*, add_WL_item (needs to call add to wish list) 
     - WishList
         - has many: Product
         - methods: display_WL, *remove_WL_item*, add_WL_item
@@ -98,6 +109,7 @@ prod_title
 price
 rating
 reviews
+alcohol
 -----
 # 2
 Brand
@@ -105,6 +117,7 @@ prod_title
 price
 rating
 reviews
+alcohol
 -----
 
 Menu will display as:
